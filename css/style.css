@@ -15,7 +15,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 8fr auto 50px;
+  grid-template-rows: 8fr auto auto 50px;
   background-color: var(--mainColor);
 }
 
@@ -44,5 +44,5 @@ body {
   padding: 0 30px;
 }
 .footer{
-  background-color: var(--fourthColor);
+  background-color: var(--secondColor);
 }
