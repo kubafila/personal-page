@@ -1,5 +1,5 @@
 :root{
-  --mainColor:#f9ed69;
+  --mainColor:#fff;
   --secondColor:#f08a5d;
   --thirdColor:#6a2c70;
   --fourthColor:rgb(184,59,94);
@@ -21,7 +21,10 @@ body {
 
 .top{ 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "title"
+  "main "
+  "footer "
   background-color: var(--thirdColor); 
   
 }
@@ -38,10 +41,16 @@ body {
   align-items: center;
   justify-content: center;
   
-  
+}
+.section {
+  margin: 20px 60px;
+  background-color: var(--thirdColor);
 }
 .bottom{
   padding: 0 30px;
+}
+.contact{
+  text-align: center;
 }
 .footer{
   background-color: var(--secondColor);
