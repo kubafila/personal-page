@@ -1,0 +1,37 @@
+:root{
+  --mainColor:#f9ed69;
+  --secondColor:#f08a5d;
+  --thirdColor:#6a2c70;
+  --fourthColor:rgb(184,59,94);
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  font-size: 1.4em;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8fr 6fr 4fr 2fr;
+}
+
+.top{ 
+  background-color: var(--mainColor);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.top div{border: 2px solid black;}
+.middle {
+  background-color: var(--secondColor);
+}
+.bottom{
+  background-color: var(--thirdColor); 
+}
+.footer{
+  background-color: var(--fourthColor);
+}
