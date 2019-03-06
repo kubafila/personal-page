@@ -16,21 +16,26 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 8fr 6fr 4fr 2fr;
+  background-color: var(--mainColor);
 }
 
 .top{ 
-  background-color: var(--mainColor);
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--thirdColor); 
+  
 }
-.top div{border: 2px solid black;}
+.top div{
+  border: 2px solid black;
+  height: 100%;
+  box-sizing: border-box;
+}
 .middle {
-  background-color: var(--secondColor);
+  padding: 0 30px;
+  
 }
 .bottom{
-  background-color: var(--thirdColor); 
+  padding: 0 30px;
 }
 .footer{
   background-color: var(--fourthColor);
