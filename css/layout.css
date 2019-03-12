@@ -1,10 +1,10 @@
-
-body {
+body,main,footer {
   padding: 0;
   margin: 0;
   text-align: center;
 }
 
+div{ box-sizing: border-box;}
 .container {
   height: 100vh;
   display: grid;
@@ -57,4 +57,30 @@ li{
   align-items: baseline;
 }
 
+.banner{
+  margin: 5% 0;
+}
 
+#about{
+  margin: 0 5%;
+  padding: 10px 10px;
+
+  display: flex;
+}
+#about div{
+  flex:3;
+  padding: 10px;
+  text-align: left;
+}
+
+#about div:first-child{
+  flex: 2;
+ 
+  border-right: 10px solid white;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

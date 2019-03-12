@@ -31,12 +31,15 @@ header .left {
 	background-image: url(../img/bg-code.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	border-right: 10px solid black;
+	border-right: 10px solid #fff;
 }
-header .left span {
+.accent {
   color: var(--fourthColor);
-	font-weight: bold;
-	 text-shadow: var(--textShadow);
+	font-weight: bold;	 
+}
+
+.social{
+	font-size: 1.8em;
 }
 
 main{
@@ -50,7 +53,23 @@ li {
 	letter-spacing: 2px;
   list-style: none;
 }
+#about{
+	background-color: var(--secondColor);
+	border-radius: 10px;
+}
+#about span{
+	color:var(--fourthColor);
+}
 footer{
   color: #fff;
   background-color: var(--fourthColor);
+}
+
+article{
+	
+	background-color: #eee;
+}
+
+article h2{
+	padding: 2% 0 0 0;
 }
