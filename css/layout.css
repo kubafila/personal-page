@@ -13,7 +13,7 @@ div{
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 700px auto 100px; 
+  grid-template-rows: minmax(700px, auto) auto minmax(60px,  auto); 
 }
 
 header{ 
@@ -81,7 +81,7 @@ section{
 }
 
 .about div {
-  padding: 5%;
+  padding: 0 5%;
   height: 100%;
 }
 
@@ -126,7 +126,7 @@ section{
 .description{
   
   background-color: #fff;
-  height: 60px;
+ 
   width: 100%;
   position: relative;
   
@@ -157,9 +157,26 @@ section{
 }
 
 form{
+  font-size: 1em;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+ 
 }
+label{
+   padding: 0;
+  
+}
+input,textarea,button{
+  width: 80%;
+  margin: 10px 0;
+  box-sizing: border-box;
+
+}
+button{
+  height: 50px;
+}
+
 footer{
   display: flex;
   justify-content: center;

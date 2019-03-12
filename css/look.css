@@ -1,3 +1,7 @@
+::selection{
+	background: var(--thirdColor);
+	color: #fff;
+}
 :root {
 	--mainColor: #f9ed69;
 	--secondColor: #f08a5d;
@@ -81,7 +85,7 @@ header li {
 	color:#000;
 }
 .image{
-	  background-image: url(/img/Palm.png);
+	  background-image: url(../img/Palm.png);
 		background-size: cover;
 		background-position: center center;
 }
@@ -121,6 +125,22 @@ header li {
 
 .contact div:last-child {
 	border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+}
+
+input, textarea{
+	background-color:#eee;
+	width: 200px;
+	border: none;
+	border-bottom: 3px solid var(--fourthColor)
+}
+button{
+	color: #6a2c70;
+		background-color: #eee;
+		font-weight: bold;
+		width: 200px;
+		border: none;
+		font-size: 1.3em;
+		text-align: left;
 }
 footer{
   color: #fff;
