@@ -39,7 +39,7 @@ header .left {
 }
 
 .social{
-	font-size: 1.8em;
+	font-size: 120%;
 }
 
 main{
@@ -51,14 +51,15 @@ main{
 }
 li {
 	letter-spacing: 2px;
-  list-style: none;
+	list-style: none;
+	font-weight: bold;
 }
-#about{
+.about{
 	background-color: var(--secondColor);
 	border-radius: 10px;
 }
-#about span{
-	color:var(--fourthColor);
+.about div:first-child{
+	border-right: 2px solid white;
 }
 footer{
   color: #fff;

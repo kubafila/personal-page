@@ -5,6 +5,7 @@ body,main,footer {
 }
 
 div{ box-sizing: border-box;}
+
 .container {
   height: 100vh;
   display: grid;
@@ -32,7 +33,7 @@ header .left{
 .siteNav{
   grid-column: span 2;
   height: 100%;
-  margin: 50px 0 ;
+  margin: 5% 0 ;
 }
 .siteNav ul{
     display: flex;
@@ -45,7 +46,6 @@ header .left{
 }
 .social{
   grid-column: span 1 /-1;
-  color: rebeccapurple;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -61,22 +61,24 @@ li{
   margin: 5% 0;
 }
 
-#about{
+.about{
   margin: 0 5%;
-  padding: 10px 10px;
+  padding: 3%;
 
   display: flex;
+  justify-content:flex-end; 
+  align-items: baseline;
+  align-content: space-around;
 }
-#about div{
+.about div{
   flex:3;
   padding: 10px;
   text-align: left;
+  
 }
 
-#about div:first-child{
+.about div:first-child{
   flex: 2;
- 
-  border-right: 10px solid white;
 }
 
 footer{
