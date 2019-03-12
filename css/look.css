@@ -49,17 +49,22 @@ main{
 .banner{
   background-color: #fff;
 }
-li {
+header li {
 	letter-spacing: 2px;
 	list-style: none;
 	font-weight: bold;
 }
 .about{
-	background-color: var(--secondColor);
+	/* background-color: #fff; */
 	border-radius: 10px;
 }
+
+.about div{
+	background-color: #fff;
+	height: 100%;
+}
 .about div:first-child{
-	border-right: 2px solid white;
+	border-right: 2px solid var(--fourthColor);
 }
 footer{
   color: #fff;
