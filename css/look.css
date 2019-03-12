@@ -4,7 +4,8 @@
 	--secondColor: #f08a5d;
 	--thirdColor: #b83b5e;
 	--fourthColor: #6a2c70;
-  --textShadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	--textShadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	--borderRadius: 10px;
 }
 body{
 	font-family: 'Quicksand', sans-serif;
@@ -42,6 +43,7 @@ header .left {
 	font-size: 120%;
 }
 
+
 main{
   /* background-color: var(--secondColor); */
 }
@@ -53,29 +55,31 @@ header li {
 	letter-spacing: 2px;
 	list-style: none;
 	font-weight: bold;
-}
-.about{
-	/* background-color: #fff; */
-	border-radius: 10px;
+	text-shadow: var(--textShadow);
 }
 
 .about div{
 	background-color: #fff;
-	height: 100%;
+	box-shadow: var(--textShadow);
 }
 .about div:first-child{
 	border-right: 2px solid var(--fourthColor);
+	border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+}
+
+.about div:last-child {
+	border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+}
+
+.skills div{
+	box-shadow: var(--textShadow);
+	border-radius: var(--borderRadius);
 }
 footer{
   color: #fff;
   background-color: var(--fourthColor);
 }
 
-article{
-	
+article{	
 	background-color: #eee;
-}
-
-article h2{
-	padding: 2% 0 0 0;
 }

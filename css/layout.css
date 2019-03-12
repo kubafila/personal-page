@@ -65,6 +65,9 @@ header li{
 section{
   padding: 0 10%;
 }
+[id]{
+  padding: 2% 0;
+}
 .about{
   border-radius: 3%;
   display: grid;
@@ -74,13 +77,9 @@ section{
 }
 .about div{
   padding: 5%;
+  height: 100%;
 }
-.about div:first-child{
-  border-radius: 10px 0 0 10px;
-}
-.about div:last-child{
-  border-radius: 0 10px 10px 0;
-}
+
 .skills {
 
   display: grid;
@@ -94,6 +93,7 @@ section{
 .skills div{
   padding: 5%;
   background-color: #fff;
+  
   width: 100%;
   text-align: left;
 }
