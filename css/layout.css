@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-
+  text-align: center;
 }
 
 .container {
@@ -11,14 +11,14 @@ body {
   grid-template-rows: 500px auto auto 100px;
 }
 
-.top{ 
+header{ 
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   height: 100%;
 }
 
-.top .left{
+header .left{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,17 +26,15 @@ body {
   
 }
 
-.top .right{
+header .right{
   display: grid;
   justify-items: center;
   align-items: flex-end;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-div{
-  height: 100%;
-  box-sizing: border-box;
-}
+
+
 nav{
   grid-column: span 2;
   align-self: start;
@@ -56,7 +54,7 @@ li{
   align-items: baseline;
   list-style: none;
 }
-.middle {
+main {
   padding: 0 30px;
   display: flex;
   flex-direction: column;
@@ -65,15 +63,7 @@ li{
   justify-content: center;
   
 }
-.section {
+section {
   margin: 20px 60px;
 }
-.bottom{
-  padding: 0 30px;
-}
-.contact{
-  text-align: center;
-}
-.footer{
-  text-align: center;
-}
+

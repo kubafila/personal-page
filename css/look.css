@@ -3,14 +3,16 @@
 	--secondColor: #f08a5d;
 	--thirdColor: #b83b5e;
 	--fourthColor: #6a2c70;
+    --textShadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 body{
-
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.4em;
 }
 h1,h2 {
-	font-family: 'Lobster', serif;
+  font-family: 'Lobster', serif;
+  color: var(--fourthColor);
+  text-shadow: var(--textShadow);
 }
 a{
 	text-decoration: none;
@@ -19,19 +21,31 @@ a{
 .container {
 	background-color: #fff;
 }
-.top .left {
+header .left {
 	color: #000;
 	background-image: url(../img/bg-code.jpg);
 	background-size: contain;
 }
-.top .left span {
-	color: var(--fourthColor);
-	font-weight: bold;
+header .left span {
+  color: var(--secondColor);
+
+  font-weight: bold;
 }
-.top .right{
+header .right{
 		background-image:linear-gradient(202deg, var(--fourthColor), #fff);
-		/* background-color: red; */
+}
+main{
+  background-color: var(--secondColor);
+}
+
+.banner{
+  background-color: #fff;
 }
 li {
 	letter-spacing: 2px;
+  
+}
+footer{
+  color: #fff;
+  background-color: var(--fourthColor);
 }
