@@ -101,13 +101,40 @@ section{
 .portfolio{
 
   display: grid;
-  grid-gap: 10%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5%;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
 
 }
-.project{
+
+
+.image{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+}
+.description{
+  
   background-color: #fff;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  
+}
+
+
+.overlay{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer{
   display: flex;

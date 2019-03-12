@@ -75,6 +75,47 @@ header li {
 	box-shadow: var(--textShadow);
 	border-radius: var(--borderRadius);
 }
+.portfolio a{
+	color:#000;
+}
+.image{
+	  background-image: url(/img/Palm.png);
+		background-size: cover;
+		background-position: center center;
+}
+.overlay{
+	text-transform: uppercase;
+  opacity: 0;
+  text-align: center;
+  background-color: black;
+  color: #fff;
+  transition: opacity 0.5s ease-in-out;
+  }
+
+.overlay:hover {
+	opacity: 0.85;
+}
+
+.image1{
+	background-image: url(../img/skynet.png);
+}
+.image2{
+	background-image: url(../img/Snake.png);
+}
+.image3{
+	background-image: url(../img/pepsi.png);
+}
+.image1{
+	background-image: url(../img/skynet.png);
+}
+.image1{
+	background-image: url(../img/skynet.png);
+}
+.image1{
+	background-image: url(../img/skynet.png);
+}
+
+.imeg
 footer{
   color: #fff;
   background-color: var(--fourthColor);
