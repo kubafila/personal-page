@@ -1,51 +1,158 @@
 :root {
-	--mainColor: #f9ed69;
-	--secondColor: #f08a5d;
-	--thirdColor: #b83b5e;
-	--fourthColor: #6a2c70;
-    --textShadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	--mainColor: #6a2c70;
+	--secondColor: #fff;
+	--thirdColor:#eee;
+	--textShadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+	--borderRadius: 10px;
+	--lineSize: 4px;
+}
+::selection{
+	background: #b83b5e;
+	color: var(--secondColor);
 }
 body{
 	font-family: 'Quicksand', sans-serif;
 	font-size: 1.4em;
+	background-color: var(--thirdColor);
+}
+.banner{
+	background-color: var(--secondColor);
 }
 h1,h2 {
   font-family: 'Lobster', serif;
-  color: var(--fourthColor);
+  color: var(--mainColor);
   text-shadow: var(--textShadow);
+}
+h1{
+	font-size: 3.3em;
+}
+h2{
+	font-size: 2.2em;
 }
 a{
 	text-decoration: none;
 	color: white;
 }
-.container {
-	background-color: #fff;
+header{
+	/* background-image:linear-gradient(202deg, var(--mainColor), var(--secondColor)); */
+			background-color: var(--mainColor);
+
+}
+.background{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url(../img/Palm.png); /* Default background */
 }
 header .left {
 	color: #000;
-	background-image: url(../img/bg-code.jpg);
-	background-size: contain;
+	background-image: url(../img/bg-code.jpg); 
+	border-right: var(--lineSize) solid var(--secondColor);
 }
-header .left span {
-  color: var(--secondColor);
-
-  font-weight: bold;
+.accent {
+  color: var(--mainColor);
+	font-weight: bold;	 
 }
-header .right{
-		background-image:linear-gradient(202deg, var(--fourthColor), #fff);
+.social{
+	font-size: 120%;
 }
-main{
-  background-color: var(--secondColor);
-}
-
-.banner{
-  background-color: #fff;
-}
-li {
+header li {
 	letter-spacing: 2px;
-  
+	list-style: none;
+	font-weight: bold;
+	text-shadow: var(--textShadow);
+}
+.about div{
+	background-color: var(--secondColor);
+	box-shadow: var(--textShadow);
+}
+.about div:first-child{
+	border-right: var(--lineSize) solid var(--mainColor);
+	border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+}
+.about div:last-child {
+	border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+}
+
+.skills div{
+	box-shadow: var(--textShadow);
+	border-radius: var(--borderRadius);
+	background-color: var(--secondColor);
+}
+.portfolio a{
+	color:#000;
+}
+.image{
+		background-size: cover;
+		background-position: center center;
+}
+.description{
+	  background-color: var(--secondColor);
+}
+.overlay{
+	text-transform: uppercase;
+  opacity: 0;
+  background-color:#000;
+  color: var(--secondColor);
+  transition: opacity 0.5s ease-in-out;
+  }
+
+.overlay:hover {
+	opacity: 0.85;
+}
+
+.image1{
+	background-image: url(../img/skynet.png);
+}
+.image2{
+	background-image: url(../img/Snake.png);
+}
+.image3{
+	background-image: url(../img/pepsi.png);
+}
+
+.contact div {
+	background-color: var(--secondColor);
+	box-shadow: var(--textShadow);
+}
+
+.contact div:first-child {
+	background-color: var(--mainColor);
+	color:var(--secondColor);
+	border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+}
+
+.contact div:last-child {
+	border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
+}
+
+input, textarea{
+	background-color:var(--thirdColor);
+	width: 200px;
+	border: none;
+	border-bottom: var(--lineSize) solid var(--mainColor);
+}
+button{
+	color: var(--mainColor);
+	background-color: var(--thirdColor);
+	font-weight: bold;
+	border: none;
+	font-size: 1.3em;
 }
 footer{
-  color: #fff;
-  background-color: var(--fourthColor);
+  color: var(--secondColor);
+  background-color: var(--mainColor);
+}
+article{	
+	background-color: var(--thirdColor);
+}
+@media only screen and (max-width: 768px) {
+	.about div:first-child {
+		border-bottom: var(--lineSize) solid var(--mainColor);
+		border-right: var(--lineSize) none;
+		border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+	}
+	.about div:last-child {
+		border-radius: 0 0 var(--borderRadius) var(--borderRadius);
+	}
 }
