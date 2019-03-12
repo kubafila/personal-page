@@ -29,7 +29,9 @@ header{
 header .left {
 	color: #000;
 	background-image: url(../img/bg-code.jpg);
-	background-size: contain;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-right: 10px solid black;
 }
 header .left span {
   color: var(--fourthColor);

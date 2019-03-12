@@ -1,3 +1,4 @@
+
 body {
   padding: 0;
   margin: 0;
@@ -31,35 +32,29 @@ header .left{
 .siteNav{
   grid-column: span 2;
   height: 100%;
-  align-self: start;
-  display: flex;
-  justify-content: space-around;
-  
+  margin: 50px 0 ;
+}
+.siteNav ul{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    align-items: flex-start;
+    justify-content: space-around;
+
+
 }
 .social{
   grid-column: span 1 /-1;
   color: rebeccapurple;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   
 }
 li{
   display: inline-block;
   align-items: baseline;
-  
 }
-main {
-  padding: 0 30px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  
-}
-section {
-  margin: 20px 60px;
-}
+
 
