@@ -8,6 +8,7 @@
   <title>Kuba Fila</title>
   <link rel="stylesheet" type="text/css" href="css/look.css">
   <link rel="stylesheet" type="text/css" href="css/layout.css">
+  <link rel="stylesheet" type="text/css" href="css/fontello.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&amp;subset=latin-ext" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
 </head>
@@ -15,54 +16,143 @@
 <body>
   <div class="container">
     <header>
-      <div class="left">
+      <div class="left background">
         <h1>Hejka!</h1>
-        <p>Nazywam się <span>Kuba Fila</span> i robię rzeczy.</p>
+        <p>Nazywam się <span class="accent">Kuba Fila</span> i robię rzeczy.</p>
       </div>
-      <div class="right">
-        <nav>
-        <ul>
-          <li>O mnie</li>
-          <li>Umiejętności</li>
-          <li>Projekty</li>
-          <li>Kontakt</li>
-        </ul>
+     
+        <nav class="siteNav">
+          <ul>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#skills">Umiejętności</a></li>
+            <li><a href="#portfolio">Projekty</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
         </nav>
 
         <nav class="social">
-          <a href="#">FB</a>
-          <a href="#">Tw</a>
-          <a href="#">Li</a>
-          <a href="#">Gt</a>
-        </nav>
-
-      </div>
+          
+          <a target ="_blank" href="http://facebook.com"><i class="icon-facebook-squared"></i></a>
+          <a target ="_blank" href="http://twitter.com"><i class="icon-twitter-squared"></i></a>
+          <a target ="_blank" href="http://linkedin.com"><i class="icon-linkedin-squared"></i></a>
+          <a target ="_blank" href="http://github.com"><i class="icon-github-squared"></i></a>
+       </nav>
+      <section class="banner">
+        <h3>Daj znać jeżeli chesz wspólnie zrobić coś niesamowitego!</h3>
+      </section>
+     
     </header>
     <main>
-     <section class="banner">
-        <p>Daj mi znać jak razem możemy zrobic coś niesamowitego!</p>
-      </section>
-      <article class="about">
-      <h2>O mnie</h2>
-      <div class="about section">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ipsum saepe enim voluptatem alias, molestiae ab cum nisi? Iusto, eius quasi. Velit voluptas, maxime officiis officia saepe quia soluta amet?</div>
-      <h2>Umiejętności</h2>
-      <div class="skill section"> 
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sed hic autem magnam nostrum, in asperiores nihil repellat culpa harum, nemo incidunt voluptas ullam provident tempore exercitationem nesciunt alias maxime.</p>
-      </div>
-
-      <div class="skill section">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sed hic autem magnam nostrum, in asperiores nihil repellat culpa harum, nemo incidunt voluptas ullam provident tempore exercitationem nesciunt alias maxime.</p>
-      </div>
+   
+      <article>
+        <h2 id="about">O mnie</h2>
+        <section class="about">
+          <div>
+            <p>Imię:    <span class="accent">Kuba Fila</span></p>
+            <p>Zawód:   <span class="accent">Junior Frontend Developer</span></p>
+            <p>Email:   <span class="accent">Kontakt@KubaFila.pl</span></p>
+            <p>Telefon: <span class="accent">123-456-789</span></p>
+          </div>
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt provident harum distinctio totam hic repellat deleniti consequatur numquam tempore iste, labore atque modi possimus doloribus culpa quaerat vitae dignissimos sed.<p>
+          </div>
+        </section>
+        <h2 id="skills">Umiejętności</h2>
+        <section class="skills">
+          <div>
+            <h3>Umiejętności twarde</h3>           
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScpript</li>
+                <li>C++</li>
+              </ul>
+          </div>
+          <div>
+            <h3>Umiejętności miękkie</h3>
+            <ul>
+                <li>Komunikacja</li>
+                <li>Rozwiązywnie problemów</li>
+                <li>Kompetencje międzykulturowe</li>
+                <li>Interdyscyplinarność</li>
+              </ul>
+          </div>
+        </section>  
+      <h2 id="portfolio">Portfolio</h2>
+        <section class="portfolio">
+          <div class="project">
+            <a href="https://kaspro-skynet.github.io/" target="_blank">
+            <div class="background image1">
+              <div class="overlay">Strona koła robotyki</div>
+              <div class="description">Strona licealnego koła robotyki "Skynet"</div>
+            </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://github.com/kufijako/Snake" target="_blank">
+            <div class="background image2">
+              <div class="overlay">Snake</div>
+              <div class="description">Gra "Snake" jako zaliczenie projektu na studiach</div>
+            </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://kufijako.github.io/Pepsi-Flavor-Challenge/" target="_blank">
+            <div class="background image3">
+              <div class="overlay">Strona wyzwania Pepsi</div>
+              <div class="description">Wyzwanie spróbowania jak największej ilości smaków pepsi</div>
+            </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="#portfolio">
+            <div class="background image4">
+              <div class="overlay">lorem ipsum</div>
+              <div class="description">Lorem ipsum dolor sit amet consectetur</div>
+            </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="#portfolio">
+            <div class="background image5">
+              <div class="overlay">lorem ipsum</div>
+              <div class="description">Lorem ipsum dolor sit amet consectetur</div>
+            </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="#portfolio">
+            <div class="background image6">
+              <div class="overlay">lorem ipsum</div>
+              <div class="description">Lorem ipsum dolor sit amet consectetur</div>
+            </div>
+            </a>
+          </div>
+        </section>
+        <h2 id="contact">Kontakt</h2>
+        <section class="contact">
+          <div>
+            <p>Masz pytania?</p>
+            <p>Zapraszam na Kontakt@KubaFila.pl</p>
+          </div>
+          <div>
+            <form action="#" method="GET">
+              <label for="name">Imię:</label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email">
+              <label for="title">Temat:</label>
+              <input type="text" id="title" name="title">
+              <label>Treść wiadomości:
+                <textarea></textarea>
+              </label>
+              <button>Wyślij <i class="icon-mail"></i></button>
+            </form>
+          </div>
+        </section>
       </article>
-      <h2>Portfolio</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sed hic autem magnam nostrum, in asperiores nihil repellat culpa harum, nemo incidunt voluptas ullam provident tempore exercitationem nesciunt alias maxime.</p>
-
-      <div class="contact">
-      <h1>Kontakt formularz</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque sed hic autem magnam nostrum, in asperiores nihil repellat culpa harum, nemo incidunt voluptas ullam provident tempore exercitationem nesciunt alias maxime.</p>
-      </div>
     </main>
-    <footer>Stopka</footer>
+    <footer>&copy; - Kuba Fila - 2019</footer>
   </div>
 </body>
   
