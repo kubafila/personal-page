@@ -16,10 +16,7 @@
 <body>
   <div class="container">
     <header>
-      <div class="left background">
-        <h1>Hejka!</h1>
-        <p>Nazywam się <span class="accent">Kuba Fila</span> i robię rzeczy.</p>
-      </div>
+
      
         <nav class="siteNav">
           <ul>
@@ -32,11 +29,16 @@
 
         <nav class="social">
           
-          <a target ="_blank" href="http://facebook.com"><i class="icon-facebook-squared"></i></a>
-          <a target ="_blank" href="http://twitter.com"><i class="icon-twitter-squared"></i></a>
-          <a target ="_blank" href="http://linkedin.com"><i class="icon-linkedin-squared"></i></a>
-          <a target ="_blank" href="http://github.com"><i class="icon-github-squared"></i></a>
+          <div><a target ="_blank" href="http://facebook.com"><i class="icon-facebook-squared"></i></a></div>
+          <div><a target ="_blank" href="http://twitter.com"><i class="icon-twitter-squared"></i></a></div>
+          <div><a target ="_blank" href="http://linkedin.com"><i class="icon-linkedin-squared"></i></a></div>
+          <div><a target ="_blank" href="http://github.com"><i class="icon-github-squared"></i></a></div>
        </nav>
+
+            <div class="left background">
+              <h1>Hejka!</h1>
+              <p>Nazywam się <span class="accent">Kuba Fila</span> i robię rzeczy.</p>
+            </div>
       <section class="banner">
         <h3>Daj znać jeżeli chesz wspólnie zrobić coś niesamowitego!</h3>
       </section>
@@ -48,7 +50,7 @@
         <h2 id="about">O mnie</h2>
         <section class="about">
           <div>
-            <p>Imię:    <span class="accent">Kuba Fila</span></p>
+            <p><span class="accent">Kuba Fila</span></p>
             <p>Zawód:   <span class="accent">Junior Frontend Developer</span></p>
             <p>Email:   <span class="accent">Kontakt@KubaFila.pl</span></p>
             <p>Telefon: <span class="accent">123-456-789</span></p>
@@ -60,21 +62,22 @@
         <h2 id="skills">Umiejętności</h2>
         <section class="skills">
           <div>
-            <h3>Umiejętności twarde</h3>           
+            <h3>Języki programowania</h3>           
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScpript</li>
                 <li>C++</li>
+                <li>Processing</li>
               </ul>
           </div>
           <div>
-            <h3>Umiejętności miękkie</h3>
+            <h3>Języki ludzkie</h3>
             <ul>
-                <li>Komunikacja</li>
-                <li>Rozwiązywnie problemów</li>
-                <li>Kompetencje międzykulturowe</li>
-                <li>Interdyscyplinarność</li>
+                <li>Polski</li>
+                <li>Anglieski</li>
+                <li>Hiszpański</li>
+                <li>Niemiecki</li>
               </ul>
           </div>
         </section>  
@@ -143,9 +146,9 @@
               <input type="text" id="email" name="email">
               <label for="title">Temat:</label>
               <input type="text" id="title" name="title">
-              <label>Treść wiadomości:
-                <textarea></textarea>
-              </label>
+              <label for="message">Treść wiadomości:</label>
+                <textarea id="message" name="message"></textarea>
+              
               <button>Wyślij <i class="icon-mail"></i></button>
             </form>
           </div>

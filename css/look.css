@@ -24,10 +24,10 @@ h1,h2 {
   text-shadow: var(--textShadow);
 }
 h1{
-	font-size: 3.3em;
+	font-size:8em;
 }
 h2{
-	font-size: 2.2em;
+	font-size: 4.2em;
 }
 a{
 	text-decoration: none;
@@ -37,6 +37,9 @@ header{
 	/* background-image:linear-gradient(202deg, var(--mainColor), var(--secondColor)); */
 			background-color: var(--mainColor);
 
+}
+header p{
+	font-size: 2em;
 }
 .background{
 	background-size: cover;
@@ -155,6 +158,25 @@ article{
 	.about div:last-child {
 		border-radius: 0 0 var(--borderRadius) var(--borderRadius);
 	}
+
+	h1 {
+		font-size: 4em;
+	}
+h2 {
+	font-size: 2.2em;
+}
+header p {
+	font-size: 1.5em;
+}
+
+.skills div {
+	box-shadow: var(--textShadow);
+	border-radius: var(--borderRadius);
+	background-color: var(--secondColor);
+	font-size: 0.8em;
+
+}
+
 <<<<<<< HEAD
 =======
 
