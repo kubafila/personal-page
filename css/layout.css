@@ -237,6 +237,7 @@ footer{
     text-align: left;
   }
 
+
   .skills {
     display: grid;
     grid-template-columns: 1fr ;

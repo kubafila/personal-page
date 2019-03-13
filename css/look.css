@@ -34,8 +34,8 @@ a{
 	color: white;
 }
 header{
-	/* background-image:linear-gradient(202deg, var(--mainColor), var(--secondColor)); */
-			background-color: var(--mainColor);
+	background-image:linear-gradient(202deg, var(--mainColor), var(--secondColor));
+			/* background-color: var(--mainColor); */
 
 }
 header p{
@@ -52,7 +52,7 @@ header .left {
 	background-image: url(../img/bg-code.jpg); 
 	border-right: var(--lineSize) solid var(--secondColor);
 }
-.accent {
+.accent, .accent a {
   color: var(--mainColor);
 	font-weight: bold;	 
 }
@@ -68,10 +68,12 @@ header li {
 .about div{
 	background-color: var(--secondColor);
 	box-shadow: var(--textShadow);
+	
 }
 .about div:first-child{
 	border-right: var(--lineSize) solid var(--mainColor);
 	border-radius: var(--borderRadius) 0 0 var(--borderRadius);
+	
 }
 .about div:last-child {
 	border-radius: 0 var(--borderRadius) var(--borderRadius) 0;
@@ -134,13 +136,21 @@ input, textarea{
 	width: 200px;
 	border: none;
 	border-bottom: var(--lineSize) solid var(--mainColor);
+	font-size: 1.3em;
+	font-family: 'Quicksand',sans-serif;
+	
 }
 button{
 	color: var(--mainColor);
 	background-color: var(--thirdColor);
+	border: 2px solid var(--mainColor);
 	font-weight: bold;
-	border: none;
-	font-size: 1.3em;
+	font-size: 1.4em;
+	font-weight: lighter;
+		font-family: 'Quicksand',sans-serif;
+}
+label{
+	font-weight: bold;
 }
 footer{
   color: var(--secondColor);
