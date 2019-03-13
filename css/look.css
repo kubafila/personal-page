@@ -57,7 +57,7 @@ header .left {
 	font-weight: bold;	 
 }
 .social{
-	font-size: 120%;
+	font-size: 160%;
 }
 header li {
 	letter-spacing: 2px;
@@ -162,24 +162,22 @@ article{
 	h1 {
 		font-size: 4em;
 	}
-h2 {
-	font-size: 2.2em;
-}
-header p {
-	font-size: 1.5em;
-}
+	h2 {
+		font-size: 2.2em;
+	}
+	header p {
+		font-size: 1.5em;
+	}
 
-.skills div {
-	box-shadow: var(--textShadow);
-	border-radius: var(--borderRadius);
-	background-color: var(--secondColor);
-	font-size: 0.8em;
+	.social {
+		font-size: 120%;
+	}
 
-}
+	.skills div {
+		box-shadow: var(--textShadow);
+		border-radius: var(--borderRadius);
+		background-color: var(--secondColor);
+		font-size: 0.8em;
+	}
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master
 }
