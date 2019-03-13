@@ -180,4 +180,11 @@ article{
 		font-size: 0.8em;
 	}
 
+	.contact div:first-child{
+		border-radius: var(--borderRadius) var(--borderRadius) 0 0;
+	}
+	.contact div:last-child{
+		border-radius: 0 0 var(--borderRadius) var(--borderRadius);
+	}
+
 }
