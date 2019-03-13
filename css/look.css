@@ -34,7 +34,7 @@ a{
 	color: white;
 }
 header{
-	background-image:linear-gradient(202deg, var(--mainColor), var(--secondColor));
+	background-image:linear-gradient(202deg, var(--mainColor) 400px, var(--secondColor));
 			/* background-color: var(--mainColor); */
 
 }
