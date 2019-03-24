@@ -19,7 +19,7 @@ body{
 	background-color: var(--secondColor);
 }
 h1,h2 {
-  font-family: 'Lobster', serif;
+	font-family: 'Baloo Chettan',serif;
   color: var(--mainColor);
   text-shadow: var(--textShadow);
 }
@@ -34,9 +34,7 @@ a{
 	color: white;
 }
 header{
-	background-image:linear-gradient(202deg, var(--mainColor) 400px, var(--secondColor));
-			/* background-color: var(--mainColor); */
-
+			background-color: var(--mainColor);
 }
 header p{
 	font-size: 2em;
@@ -87,6 +85,12 @@ header li {
 .portfolio a{
 	color:#000;
 }
+.project {
+	box-shadow: var(--textShadow);
+	border-radius: var(--borderRadius);
+	overflow: hidden;
+
+}
 .image{
 		background-size: cover;
 		background-position: center center;
@@ -116,6 +120,9 @@ header li {
 	background-image: url(../img/pepsi.png);
 }
 
+.contact a{
+	font-weight: bold;
+}
 .contact div {
 	background-color: var(--secondColor);
 	box-shadow: var(--textShadow);

@@ -27,14 +27,14 @@ header .left{
   align-items: center;
   justify-content: center;
 }
-.siteNav{
+.site-nav{
   grid-column: span 1;
   grid-row: 1/2;
   height: 100%;
   margin: 5% 0 ;
   
 }
-.siteNav ul{
+.site-nav ul {
   display: flex;
   height: 100%;
   margin: 0;
@@ -202,11 +202,11 @@ footer{
     justify-content: center;
   }
 
-  .siteNav {
+  .site-nav {
     grid-column: span 1;
   }
 
-  .siteNav ul {
+  .site-nav ul {
     margin: 0;
     padding: 0;
     display: flex;
